@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dan da dan - Anime City</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #1c1c1c, #2e2e2e);
+      color: #f0f0f0;
+    }
+    header {
+      background: #121212;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .back-button-top, .home-icon {
+      padding: 0.5rem 1rem;
+      background-color: #ff0048;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .back-button-top:hover, .home-icon:hover {
+      background-color: #ff3366;
+    }
+    .search-bar {
+      flex-grow: 1;
+      margin: 0 1rem;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #1f1f1f;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .anime-header {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .anime-header img {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+    .anime-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .anime-details div {
+      margin: 6px 0;
+      font-size: 1.1rem;
+    }
+    .episodes {
+      margin-top: 2rem;
+    }
+    .episodes h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ff0048;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    .episode {
+      background-color: #2b2b2b;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: transform 0.2s;
+    }
+    .episode:hover {
+      transform: scale(1.02);
+      background-color: #333;
+    }
+    .episode img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .episode span {
+      font-size: 1.2rem;
+    }
+    video {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #ff0048;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #ff3366;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <a href="index.html" class="home-icon">🏠</a>
+      <h1>Anime City</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+    </div>
+    <a href="index.html" class="back-button-top">← Back</a>
+  </header>
+  <div class="container">
+    <div class="anime-header">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png" alt="Your Anime Poster">
+      <div class="anime-details">
+        <div><strong>Type:</strong></div>
+        <div><strong>Release Date:</strong> </div>
+        <div><strong>Anime Type:</strong> </div>
+        <div><strong>Owner Name:</strong></div>
+      </div>
+    </div>
+
+    <video controls>
+      <source src="#" type="video/mp4">
+      <video src=""></video>
+    </video>
+
+    <div class="episodes">
+      <h3>Episodes</h3>
+      <div class="episode">
+        <img src="https://via.placeholder.com/100x60" alt="Episode 1 Thumbnail">
+        <span>Ep - 1 | S - 1</span>
+      </div>
+      <div class="episode">
+        <img src="https://via.placeholder.com/100x60" alt="Episode 2 Thumbnail">
+        <span>Ep - 2 | S - 1</span>
+      </div>
+      <div class="episode">
+        <img src="https://via.placeholder.com/100x60" alt="Episode 1 S2 Thumbnail">
+        <span>Ep - 1 | S - 2</span>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-button">← Back to Home</a>
+  </div>
+</body>
+</html>
